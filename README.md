@@ -7,6 +7,12 @@
 | 4月10日 | [评测任务报名](https://docs.qq.com/form/page/DQkxvUXJLWmVQbGhO) |
 |  |  |
 
+# 0 组织者与联系人
+
+&emsp;&emsp;任务组织者：沈新舒（华东师范大学，计算机科学与技术学院），伍洪意（华东师范大学，计算机科学与技术学院），柏晓鹏（华东师范大学，中国语言文学系），兰曼（华东师范大学， 计算机科学与技术学院），吴苑斌（华东师范大学， 计算机科学与技术学院），毛绍光（微软亚洲研究院），葛涛（微软亚洲研究院），夏炎（微软亚洲研究院）
+
+&emsp;&emsp;任务联系人：沈新舒（华东师范大学，shenxinshu11@163.com）
+
 # 1 任务内容
 
 &emsp;&emsp;随着教育的发展和网络的普及，作文评价的规模越来越大，人工评改作文的成本和效率成为一大难题。为了解决这一问题，许多研究者和机构开始探索利用计算机技术来实现作文的自动评改[1]，通过分析作文的语言、内容、结构等方面的特点及存在的问题，给出客观、准确、及时的评分和反馈。其中，表述是否流畅是教师评改作文的一项重要内容。
@@ -37,6 +43,7 @@
 
 ![表1 中小学作文病句类型识别赛道病句类型](https://github.com/paopaobubbletang/test/blob/main/%E8%A1%A81%E4%B8%AD%E5%B0%8F%E5%AD%A6%E4%BD%9C%E6%96%87%E7%97%85%E5%8F%A5%E7%B1%BB%E5%9E%8B%E8%AF%86%E5%88%AB%E8%B5%9B%E9%81%93%E7%97%85%E5%8F%A5%E7%B1%BB%E5%9E%8B.png#{height="50%";width="50%";})
 
+<p align="center">表1 中小学作文病句类型识别赛道病句类型</p>
 
 ## 1.2 赛道2：中小学作文字符级错误识别与纠正
 
@@ -80,26 +87,34 @@
 
 &emsp;&emsp;该赛道的数据来源于中学生作文数据，各项数据分布如表3所示。
 
+<div align="center">
+
+
 | 数据集（Data Set） | 句子数（sentences） |
-| --- | --- |
+|:---:|:---:|
 | 训练集（Train Set） | 104句 |
 | 验证集（Dev Set） | 27句 |
 | 测试集（Test A） | 约2000句 |
 | 盲测集（Test B） | 约5000句 |
 
-表3 中小学作文病句类型识别赛道数据分布
+
+</div>
+
+<p align="center">表3 中小学作文病句类型识别赛道数据分布</p>
 
 ## 2.2 赛道2：中小学作文字符级错误识别与纠正
 
 - **数据样例**
-
-图2 中小学作文字符级错误识别与纠正赛道数据样例
+![图2 中小学作文字符级错误识别与纠正赛道数据样例](https://github.com/paopaobubbletang/test/blob/main/%E5%9B%BE2%20%E4%B8%AD%E5%B0%8F%E5%AD%A6%E4%BD%9C%E6%96%87%E5%AD%97%E7%AC%A6%E7%BA%A7%E9%94%99%E8%AF%AF%E8%AF%86%E5%88%AB%E4%B8%8E%E7%BA%A0%E6%AD%A3%E8%B5%9B%E9%81%93%E6%95%B0%E6%8D%AE%E6%A0%B7%E4%BE%8B.png)
+<p align="center">图2 中小学作文字符级错误识别与纠正赛道数据样例</p>
 
 &emsp;&emsp;图2为赛道2的数据样例，具体包括句子ID、句子序列、错误类别、错误定位与修正列表，其中修正三元组的含义为：（待修正字在原句中的下标，需要执行的操作，修改的结果），对于需要删除的情况，修改的结果为“None”。
 
 - **评测数据集**
 
 &emsp;&emsp;该赛道的数据来源于中学生作文数据，各项数据分布如表4所示。
+
+<div align="center">
 
 | 数据集（Data Set） | 句子数（sentences） |
 |:---:|:---:|
@@ -108,13 +123,17 @@
 | 测试集（Test A） | 约1000句 |
 | 盲测集（Test B） | 约5000句 |
 
-表4 中小学作文字符级错误识别与纠正赛道数据分布
+</div>
+
+<p align="center">表4 中小学作文字符级错误识别与纠正赛道数据分布</p>
 
 ## 2.3 赛道3：中小学作文病句改写
 
 - **数据样例**
 
-图3 中小学作文病句改写赛道数据样例
+![图3 中小学作文病句改写赛道数据样例](https://github.com/paopaobubbletang/test/blob/main/%E5%9B%BE3%20%E4%B8%AD%E5%B0%8F%E5%AD%A6%E4%BD%9C%E6%96%87%E7%97%85%E5%8F%A5%E6%94%B9%E5%86%99%E8%B5%9B%E9%81%93%E6%95%B0%E6%8D%AE%E6%A0%B7%E4%BE%8B.png)
+
+<p align="center">图3 中小学作文病句改写赛道数据样例</p>
 
 &emsp;&emsp;图3为赛道3的数据样例，具体包括句子ID、句子序列、修改后的句子，编码格式为UTF-8。
 
@@ -122,14 +141,17 @@
 
 &emsp;&emsp;该赛道的数据来源于中小学生作文数据，各项数据分布如表5所示。
 
+<div align="center">
+
 | 数据集（Data Set） | 句子数（sentences） |
-| --- | --- |
+|:---:|:---:|
 | 训练集（Train Set） | 100句 |
 | 验证集（Dev Set） | 19句 |
 | 测试集（Test A） | 约1500句 |
 | 盲测集（Test B） | 约4000句 |
 
-表5 中小学作文病句改写赛道数据分布
+</div>
+<p align="center">表5 中小学作文病句改写赛道数据分布</p>
 
 # 3 评价标准
 
@@ -137,93 +159,101 @@
 
 &emsp;&emsp;总分由两部分组成：粗粒度病句识别分数和细粒度病句识别分数，具体计算方式如下：
 
+![track1 equation](https://github.com/paopaobubbletang/test/blob/main/track1_equation.png)
+
 &emsp;&emsp;本任务采用精确率（Precision, P）、召回率（Recall, R）、F1值（Micro F1）来评估粗、细粒度病句类型的识别效果，计算公式如下：
 
-病句类型识别精确率=识别病句类型和标注相同的数量/识别出的该病句类型的总数量；
+&emsp;&emsp;&emsp;&emsp;病句类型识别精确率=识别病句类型和标注相同的数量/识别出的该病句类型的总数量；
 
-病句类型识别召回率=识别病句类型和标注相同的数量/标注出的该病句类型的总数量；
+&emsp;&emsp;&emsp;&emsp;病句类型识别召回率=识别病句类型和标注相同的数量/标注出的该病句类型的总数量；
 
-病句类型F1值=(2*病句类型识别精确率*病句类型识别召回率)/(病句类型识别精确率+病句类型识别召回率)。
+&emsp;&emsp;&emsp;&emsp;病句类型F1值=(2\*病句类型识别精确率\*病句类型识别召回率)/(病句类型识别精确率+病句类型识别召回率)。
 
 ## 3.2 赛道2：中小学作文字符级错误识别与纠正
 
-总分由两部分组成：字符级错误类型识别分数和字符级错误纠正分数，具体计算方法如下：
+&emsp;&emsp;总分由两部分组成：字符级错误类型识别分数和字符级错误纠正分数，具体计算方法如下（正确句子不计算在内）：
 
-正确句子不计算在内。
+![track2 equation1](https://github.com/paopaobubbletang/test/blob/main/track2_equation1.png)
 
 - **字符级错误类型识别**
 
-采用精确率（Precision, P）、召回率（Recall, R）、F1值（Micro F1）来评估字符级错误类型的识别效果：
+&emsp;&emsp;采用精确率（Precision, P）、召回率（Recall, R）、F1值（Micro F1）来评估字符级错误类型的识别效果：
 
-错误类型识别精确率=识别错误类型和标注相同的数量/识别出的该错误类型的总数量；
+&emsp;&emsp;&emsp;&emsp;错误类型识别精确率=识别错误类型和标注相同的数量/识别出的该错误类型的总数量；
 
-错误类型识别召回率=识别错误类型和标注相同的数量/标注出的该错误类型的总数量；
+&emsp;&emsp;&emsp;&emsp;错误类型识别召回率=识别错误类型和标注相同的数量/标注出的该错误类型的总数量；
 
-错误类型F1值=(2*错误类型识别精确率*错误类型识别召回率)/(错误类型识别精确率+错误类型识别召回率)。
+&emsp;&emsp;&emsp;&emsp;错误类型F1值=(2\*错误类型识别精确率\*错误类型识别召回率)/(错误类型识别精确率+错误类型识别召回率)。
 
 - **字符级错误纠正**
 
-采用精确率（Precision, P）、召回率（Recall, R）、F1值（Micro F1）对结果进行评估。从字粒度和句子粒度进行评估，具体计算方式如下：
+&emsp;&emsp;采用精确率（Precision, P）、召回率（Recall, R）、F1值（Micro F1）对结果进行评估。从字粒度和句子粒度进行评估，具体计算方式如下：
 
-各粒度又从检测和纠正两部分对结果进行评估，具体计算方式如下：
+![track2 equation1](https://github.com/paopaobubbletang/test/blob/main/track2_equation1.png)
 
-各precision、recall计算方式：
+&emsp;&emsp;各粒度又从检测和纠正两部分对结果进行评估，具体计算方式如下：
 
-## 3.3 赛道3：中小学作文病句改写
+![track2 equation2](https://github.com/paopaobubbletang/test/blob/main/track2_equation2.png)
 
-由于参赛者提供的改写结果是多样的，因此该任务的评测综合考虑自动评分和与标注的参考改正方案的打分，其中自动评分的原则是句子流畅和与原句的改动尽可能小；在此基础之上对最终排名前5的队伍进行人工辅助评测。正确句子不计算在内。总分计算方式如下：
+&emsp;&emsp;各precision、recall计算方式：
 
-具体计算方式详见本赛道的评测脚本。
+![track2 equation3](https://github.com/paopaobubbletang/test/blob/main/track2_equation3.png)
+
+![track2 equation4](https://github.com/paopaobubbletang/test/blob/main/track2_equation4.png)
+
+![track2 equation5](https://github.com/paopaobubbletang/test/blob/main/track2_equation5.png)
+
+![track2 equation6](https://github.com/paopaobubbletang/test/blob/main/track2_equation6.png)
+
+![track2 equation7](https://github.com/paopaobubbletang/test/blob/main/track2_equation7.png)
+
+![track2 equation8](https://github.com/paopaobubbletang/test/blob/main/track2_equation8.png)
+
+![track2 equation9](https://github.com/paopaobubbletang/test/blob/main/track2_equation9.png)
+
+![track2 equation10](https://github.com/paopaobubbletang/test/blob/main/track2_equation10.png)
+
+![track2 equation11](https://github.com/paopaobubbletang/test/blob/main/track2_equation11.png)
+
+## 3.3 赛道3：中小学作文病句改写  
+
+&emsp;&emsp;由于参赛者提供的改写结果是多样的，因此该任务的评测综合考虑自动评分和与标注的参考改正方案的打分，其中自动评分的原则是句子流畅和与原句的改动尽可能小；在此基础之上对最终排名前5的队伍进行人工辅助评测。正确句子不计算在内。总分计算方式如下：
+
+&emsp;&emsp;具体计算方式详见本赛道的评测脚本。
 
 # 4 评测赛程
 
 ## 4.1 赛程
 
-2023年4月7日：评测报名开始，任务主页点击链接报名；发布训练集及评测脚本给参赛队；
+&emsp;&emsp;2023年4月10日：评测报名开始，任务主页点击链接报名；发布训练集及评测脚本给参赛队；
 
-2023年4月28日：发布不带黄金标准答案的测试集Test A给参赛队，开放结果提交链接；
+&emsp;&emsp;2023年4月28日：发布不带黄金标准答案的测试集Test A给参赛队，开放结果提交链接；
 
-2023年5月15日：报名截止；
+&emsp;&emsp;2023年5月15日：报名截止；
 
-2023年5月25日：发布不带黄金标准答案的盲测Test B数据集给参赛队；
+&emsp;&emsp;2023年5月25日：发布不带黄金标准答案的盲测Test B数据集给参赛队；
 
-2023年6月9日：盲测Test B提交截止；
+&emsp;&emsp;2023年6月9日：盲测Test B提交截止；
 
-2023年6月13日：公布参赛队伍的成绩和排名（并非最终排名，还需参考技术报告）；
+&emsp;&emsp;2023年6月13日：公布参赛队伍的成绩和排名（并非最终排名，还需参考技术报告）；
 
-2023年6月22日：技术报告提交截止；
+&emsp;&emsp;2023年6月22日：技术报告提交截止；
 
-2023年7月7日：公布获奖名单；
-
-2023年7月10日：评测论文录用通知；
-
-2023年7月15日：论文Camera Ready提交；
-
-2023年8月3日-5日：CCL 2023评测研讨会，评测结束。
+&emsp;&emsp;2023年7月7日：公布获奖名单；
 
 ## 4.2 报告格式
 
 - 报告可由中文或英文撰写。
-- 报告统一使用CCL 2023 的论文模版。
+- 报告统一使用CCL 2023 的[论文模版](http://cips-cl.org/static/CCL2023/downloads/ccl2023_template.zip)。
 - 报告应至少包含以下四个部分：模型介绍、评测结果、结果分析与讨论和参考文献。
 
-# 5 资助情况
+# 5 奖项设置
 
-中国中文信息学会提供的荣誉证书
+- 本次评测将设置一、二、三等奖，由中国中文信息学会为本次评测获奖队伍提供荣誉证书
 
-奖金：共计5000元****
+- 奖金：共计5000元
 
-# 6 任务网址
-
-https://github.com/cubenlp/CEFE
-
-# 7 组织者与联系人
-
-任务组织者：沈新舒（华东师范大学，计算机科学与技术学院），伍洪意（华东师范大学，计算机科学与技术学院），柏晓鹏（华东师范大学，中国语言文学系），兰曼（华东师范大学， 计算机科学与技术学院），吴苑斌（华东师范大学， 计算机科学与技术学院），毛绍光（微软亚洲研究院），葛涛（微软亚洲研究院），夏炎（微软亚洲研究院）
-
-任务联系人：沈新舒（华东师范大学，shenxinshu11@163.com）
-
-# 8 参考文献
+# 6 参考文献
 
 [1]Lawrence M Rudner, Veronica Garcia, and Catherine Welch. 2006. An evaluation of intellimetricessay scoring system. The Journal of Technology, Learning and Assessment, 4(4).
 
