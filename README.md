@@ -1,4 +1,4 @@
-# 中小学作文流畅度评价(Chinese Essay Fluency Evaluation)评测 2023
+# 2023CCL评测：中小学作文流畅度评价(Chinese Essay Fluency Evaluation)
 
 # 最新消息
 
@@ -41,7 +41,7 @@
 
 &emsp;&emsp;中小学作文病句类型识别是一个多标签分类问题，预测一条句子是哪些类型的病句。病句类型标签同时包含词法、句法、语义错误，本次评测任务共定义4个粗粒度错误类型和14个细粒度错误类型。病句类别定义及示例如下表1：
 
-![表1 中小学作文病句类型识别赛道病句类型](https://github.com/paopaobubbletang/test/blob/main/%E8%A1%A81%E4%B8%AD%E5%B0%8F%E5%AD%A6%E4%BD%9C%E6%96%87%E7%97%85%E5%8F%A5%E7%B1%BB%E5%9E%8B%E8%AF%86%E5%88%AB%E8%B5%9B%E9%81%93%E7%97%85%E5%8F%A5%E7%B1%BB%E5%9E%8B.png#{height="50%";width="50%";})
+![表1 中小学作文病句类型识别赛道病句类型](https://github.com/cubenlp/2023CCL_CEFE/blob/main/imgs/%E8%A1%A81%E4%B8%AD%E5%B0%8F%E5%AD%A6%E4%BD%9C%E6%96%87%E7%97%85%E5%8F%A5%E7%B1%BB%E5%9E%8B%E8%AF%86%E5%88%AB%E8%B5%9B%E9%81%93%E7%97%85%E5%8F%A5%E7%B1%BB%E5%9E%8B.png)
 
 <p align="center">表1 中小学作文病句类型识别赛道病句类型</p>
 
@@ -55,7 +55,7 @@
 
 &emsp;&emsp;中小学作文字符级错误主要聚焦于四个方面：缺字漏字、错别字错误、缺少标点、错用标点，字符级错误类别识别任务为多标签分类任务。字符级错误识别与纠正以作文句子作为输入，输出错误类别和修改方式三元组，三元组内容包含所在原句位置、要执行的操作（A-增加，R-替换，D-删除）、及对应位置修改结果；错误类别定义及示例如下表2所示：
 
-![表2 中小学作文字符级错误识别与纠正赛道错误类型](https://github.com/paopaobubbletang/test/blob/main/%E8%A1%A82%E4%B8%AD%E5%B0%8F%E5%AD%A6%E4%BD%9C%E6%96%87%E5%AD%97%E7%AC%A6%E7%BA%A7%E9%94%99%E8%AF%AF%E8%AF%86%E5%88%AB%E4%B8%8E%E7%BA%A0%E6%AD%A3%E8%B5%9B%E9%81%93%E9%94%99%E8%AF%AF%E7%B1%BB%E5%9E%8B.png#{height="50%";width="50%";})
+![表2 中小学作文字符级错误识别与纠正赛道错误类型](https://github.com/cubenlp/2023CCL_CEFE/blob/main/imgs/%E8%A1%A82%E4%B8%AD%E5%B0%8F%E5%AD%A6%E4%BD%9C%E6%96%87%E5%AD%97%E7%AC%A6%E7%BA%A7%E9%94%99%E8%AF%AF%E8%AF%86%E5%88%AB%E4%B8%8E%E7%BA%A0%E6%AD%A3%E8%B5%9B%E9%81%93%E9%94%99%E8%AF%AF%E7%B1%BB%E5%9E%8B.png#{height="50%";width="50%";})
 
 <p align="center">表2中小学作文字符级错误识别与纠正赛道错误类型</p>
 
@@ -77,7 +77,7 @@
 
 - **数据样例**
 
-![图1 中小学作文病句类型识别赛道数据样例](https://github.com/paopaobubbletang/test/blob/main/%E5%9B%BE1%20%E4%B8%AD%E5%B0%8F%E5%AD%A6%E4%BD%9C%E6%96%87%E7%97%85%E5%8F%A5%E7%B1%BB%E5%9E%8B%E8%AF%86%E5%88%AB%E8%B5%9B%E9%81%93%E6%95%B0%E6%8D%AE%E6%A0%B7%E4%BE%8B.png)
+![图1 中小学作文病句类型识别赛道数据样例](https://github.com/cubenlp/2023CCL_CEFE/blob/main/imgs/%E5%9B%BE1%20%E4%B8%AD%E5%B0%8F%E5%AD%A6%E4%BD%9C%E6%96%87%E7%97%85%E5%8F%A5%E7%B1%BB%E5%9E%8B%E8%AF%86%E5%88%AB%E8%B5%9B%E9%81%93%E6%95%B0%E6%8D%AE%E6%A0%B7%E4%BE%8B.png)
 
 <p align="center">图1 中小学作文病句类型识别赛道数据样例</p>
 
@@ -105,7 +105,7 @@
 ## 2.2 赛道2：中小学作文字符级错误识别与纠正
 
 - **数据样例**
-![图2 中小学作文字符级错误识别与纠正赛道数据样例](https://github.com/paopaobubbletang/test/blob/main/%E5%9B%BE2%20%E4%B8%AD%E5%B0%8F%E5%AD%A6%E4%BD%9C%E6%96%87%E5%AD%97%E7%AC%A6%E7%BA%A7%E9%94%99%E8%AF%AF%E8%AF%86%E5%88%AB%E4%B8%8E%E7%BA%A0%E6%AD%A3%E8%B5%9B%E9%81%93%E6%95%B0%E6%8D%AE%E6%A0%B7%E4%BE%8B.png)
+![图2 中小学作文字符级错误识别与纠正赛道数据样例](https://github.com/cubenlp/2023CCL_CEFE/blob/main/imgs/%E5%9B%BE2%20%E4%B8%AD%E5%B0%8F%E5%AD%A6%E4%BD%9C%E6%96%87%E5%AD%97%E7%AC%A6%E7%BA%A7%E9%94%99%E8%AF%AF%E8%AF%86%E5%88%AB%E4%B8%8E%E7%BA%A0%E6%AD%A3%E8%B5%9B%E9%81%93%E6%95%B0%E6%8D%AE%E6%A0%B7%E4%BE%8B.png)
 <p align="center">图2 中小学作文字符级错误识别与纠正赛道数据样例</p>
 
 &emsp;&emsp;图2为赛道2的数据样例，具体包括句子ID、句子序列、错误类别、错误定位与修正列表，其中修正三元组的含义为：（待修正字在原句中的下标，需要执行的操作，修改的结果），对于需要删除的情况，修改的结果为“None”。
@@ -131,7 +131,7 @@
 
 - **数据样例**
 
-![图3 中小学作文病句改写赛道数据样例](https://github.com/paopaobubbletang/test/blob/main/%E5%9B%BE3%20%E4%B8%AD%E5%B0%8F%E5%AD%A6%E4%BD%9C%E6%96%87%E7%97%85%E5%8F%A5%E6%94%B9%E5%86%99%E8%B5%9B%E9%81%93%E6%95%B0%E6%8D%AE%E6%A0%B7%E4%BE%8B.png)
+![图3 中小学作文病句改写赛道数据样例](https://github.com/cubenlp/2023CCL_CEFE/blob/main/imgs/%E5%9B%BE3%20%E4%B8%AD%E5%B0%8F%E5%AD%A6%E4%BD%9C%E6%96%87%E7%97%85%E5%8F%A5%E6%94%B9%E5%86%99%E8%B5%9B%E9%81%93%E6%95%B0%E6%8D%AE%E6%A0%B7%E4%BE%8B.png)
 
 <p align="center">图3 中小学作文病句改写赛道数据样例</p>
 
@@ -159,7 +159,7 @@
 
 &emsp;&emsp;总分由两部分组成：粗粒度病句识别分数和细粒度病句识别分数，具体计算方式如下：
 
-![track1 equation](https://github.com/paopaobubbletang/test/blob/main/track1_equation.png)
+![track1 equation](https://github.com/cubenlp/2023CCL_CEFE/blob/main/imgs/track1_equation.png)
 
 &emsp;&emsp;本任务采用精确率（Precision, P）、召回率（Recall, R）、F1值（Micro F1）来评估粗、细粒度病句类型的识别效果，计算公式如下：
 
@@ -173,7 +173,7 @@
 
 &emsp;&emsp;总分由两部分组成：字符级错误类型识别分数和字符级错误纠正分数，具体计算方法如下（正确句子不计算在内）：
 
-![track2 equation1](https://github.com/paopaobubbletang/test/blob/main/track2_equation1.png)
+![track2 equation1](https://github.com/cubenlp/2023CCL_CEFE/blob/main/imgs/track2_equation1.png)
 
 - **字符级错误类型识别**
 
@@ -189,31 +189,31 @@
 
 &emsp;&emsp;采用精确率（Precision, P）、召回率（Recall, R）、F1值（Micro F1）对结果进行评估。从字粒度和句子粒度进行评估，具体计算方式如下：
 
-![track2 equation1](https://github.com/paopaobubbletang/test/blob/main/track2_equation1.png)
+![track2 equation1](https://github.com/cubenlp/2023CCL_CEFE/blob/main/imgs/track2_equation1.png)
 
 &emsp;&emsp;各粒度又从检测和纠正两部分对结果进行评估，具体计算方式如下：
 
-![track2 equation2](https://github.com/paopaobubbletang/test/blob/main/track2_equation2.png)
+![track2 equation2](https://github.com/cubenlp/2023CCL_CEFE/blob/main/imgs/track2_equation2.png)
 
 &emsp;&emsp;各precision、recall计算方式：
 
-![track2 equation3](https://github.com/paopaobubbletang/test/blob/main/track2_equation3.png)
+![track2 equation3](https://github.com/cubenlp/2023CCL_CEFE/blob/main/imgs/track2_equation3.png)
 
-![track2 equation4](https://github.com/paopaobubbletang/test/blob/main/track2_equation4.png)
+![track2 equation4](https://github.com/cubenlp/2023CCL_CEFE/blob/main/imgs/track2_equation4.png)
 
-![track2 equation5](https://github.com/paopaobubbletang/test/blob/main/track2_equation5.png)
+![track2 equation5](https://github.com/cubenlp/2023CCL_CEFE/blob/main/imgs/track2_equation5.png)
 
-![track2 equation6](https://github.com/paopaobubbletang/test/blob/main/track2_equation6.png)
+![track2 equation6](https://github.com/cubenlp/2023CCL_CEFE/blob/main/imgs/track2_equation6.png)
 
-![track2 equation7](https://github.com/paopaobubbletang/test/blob/main/track2_equation7.png)
+![track2 equation7](https://github.com/cubenlp/2023CCL_CEFE/blob/main/imgs/track2_equation7.png)
 
-![track2 equation8](https://github.com/paopaobubbletang/test/blob/main/track2_equation8.png)
+![track2 equation8](https://github.com/cubenlp/2023CCL_CEFE/blob/main/imgs/track2_equation8.png)
 
-![track2 equation9](https://github.com/paopaobubbletang/test/blob/main/track2_equation9.png)
+![track2 equation9](https://github.com/cubenlp/2023CCL_CEFE/blob/main/imgs/track2_equation9.png)
 
-![track2 equation10](https://github.com/paopaobubbletang/test/blob/main/track2_equation10.png)
+![track2 equation10](https://github.com/cubenlp/2023CCL_CEFE/blob/main/imgs/track2_equation10.png)
 
-![track2 equation11](https://github.com/paopaobubbletang/test/blob/main/track2_equation11.png)
+![track2 equation11](https://github.com/cubenlp/2023CCL_CEFE/blob/main/imgs/track2_equation11.png)
 
 ## 3.3 赛道3：中小学作文病句改写  
 
